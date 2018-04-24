@@ -5,4 +5,8 @@ extern "C" {
     void logBySwift() {
         [SampleSwift logBySwift]; // call Swift method
     }
+    
+    void logBySwift2() {
+        [SampleSwift logBySwift2]; // call Swift method
+    }
 }
