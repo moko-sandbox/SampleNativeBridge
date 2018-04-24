@@ -1,7 +1,7 @@
 import UIKit
 
-public class SampleSwift: NSObjec {
-    public class func log() {
+public class SampleSwift: NSObject {
+    public class func logBySwift() {
         print("[Swift] Called Swift method :-)")
     }
 }
