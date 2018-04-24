@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
 
 extern "C"{
-    void test_() {
+    void logByObjectiveC() {
         NSLog(@"[Objective-C] Called Objective-C method :-)");
     }
 }

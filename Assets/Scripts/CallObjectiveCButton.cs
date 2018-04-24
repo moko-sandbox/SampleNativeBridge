@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class CallObjectiveCButton : MonoBehaviour {
 	public void PressObjectiveCButton () {
-		Binding.test();
+		Binding.callObjectiveCMethod();
 	}
 }

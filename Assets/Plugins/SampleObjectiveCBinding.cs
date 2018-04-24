@@ -3,11 +3,11 @@ using System.Runtime.InteropServices;
 
 public class Binding {
     [DllImport("__Internal")]
-    private static extern void test_ ();
+    private static extern void logByObjectiveC ();
 
-	public static void test () {
+	public static void callObjectiveCMethod () {
 		if (Application.platform != RuntimePlatform.OSXEditor) {
-        	test_();
+			logByObjectiveC();
 		} else {
 			Debug.Log("[C#] called");
 		}
