@@ -8,6 +8,8 @@ public class Binding {
 	public static void test () {
 		if (Application.platform != RuntimePlatform.OSXEditor) {
         	test_();
+		} else {
+			Debug.Log("[C#] called");
 		}
     }
 }
