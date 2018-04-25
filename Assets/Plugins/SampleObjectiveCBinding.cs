@@ -8,6 +8,9 @@ public class Binding {
 	[DllImport("__Internal")]
 	private static extern void logUnityViewRect();
 
+	[DllImport("__Internal")]
+	private static extern void logArgs(int intArg, float floatArg, bool boolArg, string charArg);
+
 	public static void callObjectiveCMethod () {
 		if (Application.platform != RuntimePlatform.OSXEditor) {
 			logByObjectiveC();
@@ -25,6 +28,18 @@ public class Binding {
 		else
 		{
 			logUnityViewRect();
+		}
+	}
+
+	public static void callLogArgs()
+	{
+		if (Application.isEditor)
+		{
+			Debug.Log("[C#] callLogUnityViewRect is called on editor");
+		}
+		else
+		{
+			logArgs(1, 1.0F, true, "rtmp://domain/stream/key");
 		}
 	}
 }

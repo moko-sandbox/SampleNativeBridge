@@ -11,4 +11,9 @@ public class CallObjectiveCButton : MonoBehaviour {
 	{
 		Binding.callLogUnityViewRect();
 	}
+
+	public void PressCallLogArgs()
+	{
+		Binding.callLogArgs();
+	}
 }
